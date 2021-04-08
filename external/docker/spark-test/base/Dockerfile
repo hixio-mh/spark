@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-FROM ubuntu:20.04
+FROM ubuntu:rolling
 
 # Upgrade package index
 # install a few other useful packages plus Open Java 11
