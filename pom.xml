@@ -136,7 +136,7 @@
     <derby.version>10.12.1.1</derby.version>
     <parquet.version>1.10.1</parquet.version>
     <orc.version>1.5.10</orc.version>
-    <orc.classifier></orc.classifier>
+    <orc.classifier/>
     <hive.parquet.group>com.twitter</hive.parquet.group>
     <hive.parquet.version>1.6.0</hive.parquet.version>
     <jetty.version>9.4.28.v20200408</jetty.version>
@@ -160,7 +160,7 @@
     <commons.math3.version>3.4.1</commons.math3.version>
     <!-- managed up from 3.2.1 for SPARK-11652 -->
     <commons.collections.version>3.2.2</commons.collections.version>
-    <scala.version>2.12.10</scala.version>
+    <scala.version>2.13.6</scala.version>
     <scala.binary.version>2.12</scala.binary.version>
     <scalafmt.parameters>--test</scalafmt.parameters>
     <!-- for now, not running scalafmt as part of default verify pipeline -->
@@ -207,8 +207,8 @@
 
     <!-- Some UI tests require Chrome and Chrome driver installed so those tests are disabled by default. -->
     <test.default.exclude.tags>org.apache.spark.tags.ChromeUITest</test.default.exclude.tags>
-    <test.exclude.tags></test.exclude.tags>
-    <test.include.tags></test.include.tags>
+    <test.exclude.tags/>
+    <test.include.tags/>
 
     <!-- Package to use when relocating shaded classes. -->
     <spark.shade.packageName>org.sparkproject</spark.shade.packageName>
@@ -246,7 +246,7 @@
       things breaking.
     -->
     <spark.test.home>${session.executionRootDirectory}</spark.test.home>
-    <spark.test.webdriver.chrome.driver></spark.test.webdriver.chrome.driver>
+    <spark.test.webdriver.chrome.driver/>
 
     <CodeCacheSize>1g</CodeCacheSize>
   </properties>
@@ -2723,7 +2723,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -2736,7 +2736,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -2749,7 +2749,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -2935,7 +2935,7 @@
             </goals>
             <configuration>
               <target>
-                <mkdir dir="${project.build.directory}/tmp" />
+                <mkdir dir="${project.build.directory}/tmp"/>
               </target>
             </configuration>
           </execution>
@@ -3076,7 +3076,7 @@
       <id>hive-1.2</id>
       <properties>
         <hive.group>org.spark-project.hive</hive.group>
-        <hive.classifier></hive.classifier>
+        <hive.classifier/>
         <!-- Version used in Maven Hive dependency -->
         <hive.version>1.2.1.spark2</hive.version>
         <!-- Version used for internal directory structure -->
@@ -3165,7 +3165,7 @@
     <profile>
       <id>scala-2.13</id>
       <properties>
-        <scala.version>2.13.3</scala.version>
+        <scala.version>2.13.6</scala.version>
         <scala.binary.version>2.13</scala.binary.version>
       </properties>
       <dependencyManagement>
